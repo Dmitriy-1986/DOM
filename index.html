@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .social_section_1info {
+            transition-duration: 1.0s;
+        }
+
+        .text-red {
+            color: red;
+        }
+
+        .text-black {
+            color: black;
+        }
+
+        .text-weight {
+            font-weight: bold;
+        }
+
+        .text-font-24 {
+            font-size: 24px;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- <div class="social_section_1info ">
+        смена стилей классом
+    </div> -->
+    <!-- <div id="elem">Мигающий элемент</div> -->
+    <div class="section">Привет, мир!</div>
+
+
+    <div class="container">
+        <div class="row">
+            <ul class="col-6 links w-25">
+                <li id="PlacesToTravel"><a href="https://novipovorot.pp.ua/page-Turkey.html" class="scroll">Турция</a>
+                </li>
+                <li><a href="https://novipovorot.pp.ua/page-Beer.html" class="scroll">Пиво</a></li>
+                <li><a href="https://novipovorot.pp.ua/page-Odessa-on-march.html" class="scroll">Одесса</a>
+                </li>
+                <li><a href="https://novipovorot.pp.ua/page-Karpati.html" class="scroll">Карпаты</a>
+                </li>
+            </ul>
+            <ul class="col-6 links w-25">
+                <li><a href="https://novipovorot.pp.ua/page-Limonariy.html" class="scroll">Лимонарий</a>
+                </li>
+                <li><a href="https://novipovorot.pp.ua/page-LOL.html" class="scroll">ЛОЛ</a></li>
+                <li><a href="https://novipovorot.pp.ua/page-Hortica.html" class="scroll">Хортица</a>
+                <li><a href="https://novipovorot.pp.ua/page-Hortica.html" class="scroll">Хортица</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- JS -->
+    <script>
+        // появляеться и исчезает элемент
+        //setInterval(() => elem.hidden = !elem.hidden, 1000);
+
+        //let nav = document.querySelector('.social_section_1info');
+        //nav.classList.add('text-red');//добавить класс свойством classList.add
+        // nav.classList.remove('text-weight');//убрать класс свойством classList.remove
+        //добавляет убирает класс свойство toggle
+        /* setInterval(function () {
+            nav.classList.toggle('text-weight');
+            nav.classList.toggle('text-black');
+            nav.classList.toggle('text-font-24');
+        }, 1000
+
+        ) */
+        //----
+        // let section = document.querySelector('section');
+        // заменяем div.outerHTML на <p>...</p>
+        //section.outerHTML = '<p>Новый элемент</p>';
+
+
+
+
+        //----PlacesToTravel
+        /*  let PlacesToTravel = document.getElementById('PlacesToTravel'); */
+
+        /*  'https://novipovorot.pp.ua/page-wine.html';
+         'https://novipovorot.pp.ua/page-Georgia.html';
+         'https://novipovorot.pp.ua/page-Beer.html';
+         +'https://novipovorot.pp.ua/page-Hortica.html';
+         +'https://novipovorot.pp.ua/page-Karpati.html';
+         +'https://novipovorot.pp.ua/page-LOL.html';
+         +'https://novipovorot.pp.ua/page-Limonariy.html';
+         +'https://novipovorot.pp.ua/page-Odessa-on-march.html';
+         'https://novipovorot.pp.ua/page-Stambul.html';
+         +'https://novipovorot.pp.ua/page-Turkey.html';
+         'https://novipovorot.pp.ua/page-cofe-Isla.html';
+        --- 'https://novipovorot.pp.ua/page-eight-march.html';
+         'https://novipovorot.pp.ua/page-TicToc-pati.html';
+         'https://novipovorot.pp.ua/page-wine.html';
+         'https://novipovorot.pp.ua/page-zoo.html';
+         'https://novipovorot.pp.ua/page-balloon-festival.html';
+         'https://novipovorot.pp.ua/page-cheese-farm.html';
+         'https://novipovorot.pp.ua/page-Zaporizhzhia-on-Dnieper.html';
+         'https://novipovorot.pp.ua/page-Kharkov.html';
+         'https://novipovorot.pp.ua/page-yavorovskaya-niagara.html';
+         'https://novipovorot.pp.ua/page-gold-mines.html';
+         'https://novipovorot.pp.ua/page-Lviv-for-weekend.html'; */
+
+        /* document.getElementById("link-one").href = beer; */
+        /* Турция
+        Пиво
+        Одесса
+        Карпаты
+        Лимонарий
+        ЛОЛ
+        Хортица */
+        /* Georgia */
+        let Georgia = 'https://novipovorot.pp.ua/page-Georgia.html';
+        let GeorgiaText = document.createTextNode("Georgia");
+
+        let li = document.createElement('li');
+        li.classList.add('scroll');
+
+        let a = document.createElement('a');
+        a.appendChild(GeorgiaText);
+        a.href = Georgia;
+        a.title = "Georgia";
+        li.appendChild(a);
+
+        document.getElementById("PlacesToTravel").append(li);
+        /* //Georgia */
+
+        /* wine */
+        let wine = 'https://novipovorot.pp.ua/page-wine.html';
+        let wineText = document.createTextNode("WINE");
+
+        let li2 = document.createElement('li');
+        li2.classList.add('scroll');
+
+        let a2 = document.createElement('a');
+        a2.appendChild(wineText);
+        a2.href = wine;
+        a2.title = "WINE";
+        li2.appendChild(a2);
+        document.getElementById("PlacesToTravel").append(li2);
+        /* //wine */
+
+        /* li3 */
+        /* let wine = 'https://novipovorot.pp.ua/page-wine.html';
+        let wineText = document.createTextNode("WINE");
+
+        let li2 = document.createElement('li');
+        li2.classList.add('scroll');
+
+        let a2 = document.createElement('a');
+        a2.appendChild(wineText);
+        a2.href = wine;
+        a2.title = "WINE";
+        li2.appendChild(a2);
+        document.getElementById("PlacesToTravel").append(li2); */
+
+
+    </script>
+</body>
+
+</html>
