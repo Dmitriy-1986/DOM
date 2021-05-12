@@ -32,10 +32,10 @@
 </head>
 
 <body>
-    <!-- <div class="social_section_1info ">
+    <div class="social_section_1info ">
         смена стилей классом
-    </div> -->
-    <!-- <div id="elem">Мигающий элемент</div> -->
+    </div> 
+    <div id="elem">Мигающий элемент</div> 
     <div class="section">Привет, мир!</div>
 
 
@@ -65,23 +65,24 @@
     <!-- JS -->
     <script>
         // появляеться и исчезает элемент
-        //setInterval(() => elem.hidden = !elem.hidden, 1000);
+        setInterval(() => elem.hidden = !elem.hidden, 1000);
 
-        //let nav = document.querySelector('.social_section_1info');
-        //nav.classList.add('text-red');//добавить класс свойством classList.add
-        // nav.classList.remove('text-weight');//убрать класс свойством classList.remove
+        let nav = document.querySelector('.social_section_1info');
+        nav.classList.add('text-red');//добавить класс свойством classList.add
+        nav.classList.remove('text-weight');//убрать класс свойством classList.remove
         //добавляет убирает класс свойство toggle
-        /* setInterval(function () {
+         setInterval(function () {
             nav.classList.toggle('text-weight');
             nav.classList.toggle('text-black');
             nav.classList.toggle('text-font-24');
         }, 1000
 
-        ) */
+        ) 
+        
         //----
-        // let section = document.querySelector('section');
-        // заменяем div.outerHTML на <p>...</p>
-        //section.outerHTML = '<p>Новый элемент</p>';
+        let section = document.querySelector('section');
+       // заменяем div.outerHTML на <p>...</p>
+        section.outerHTML = '<p>Новый элемент</p>';
 
 
 
